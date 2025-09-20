@@ -1,0 +1,55 @@
+#section, button, input{
+    font-family: 'Poppins', sans-serif; 
+}
+body { 
+    font-family: 'Poppins', sans-serif; 
+    margin: 0 10% 10% 10%;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+#column {
+    display: flex;
+    margin: 0 10% 0 10%;
+    justify-content: center;
+    align-content: end;
+    background-color: #bddfff;
+}
+
+.row {
+    display: flex; 
+    gap: 8px; 
+    flex-wrap: wrap; 
+    margin: 2%;
+    align-content: center; 
+}
+
+.card { 
+    border: 1px solid #3f3f3f; 
+    padding: 10px; 
+    margin: 8px 0; 
+    display: flex; 
+    gap: 10px; }
+
+.card img { 
+    width: 150px; 
+    height: 120px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.muted { 
+    color: #ae00ff; 
+    font-size: 15px;
+}
+
+.star { 
+    cursor: pointer; 
+    font-size: 18px; 
+    border: none; 
+    background: none; 
+    padding: 0 6px; 
+}

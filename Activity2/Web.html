@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <title>Undergradian News</title>
+  <link rel="stylesheet" href="Style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title"><h1>The Undergradian News</h1></div>
+    <div id="column">
+        <div class="row">
+            <label for="q"></label>
+            <input id="q" type="search" placeholder="Search (Press Enter)" onclick="findQuery()"/>
+
+                <label for="section"></label>
+                <select id="section" onclick="dropDowns()">
+                    <option value="">All sections</option>
+                    <option value="world">World</option>
+                    <option value="technology">Technology</option>
+                    <option value="sport">Sport</option>
+                    <option value="business">Business</option>
+                    <option value="science">Science</option>
+                    <option value="culture">Culture</option>
+                </select>
+            <button id="refresh" onclick="fetchNews()">Refresh</button>
+            </div>
+            <div class="row" id="bonusControls">
+                <label><input type="checkbox" id="showSummaries" /> Show summaries</label>
+            </div>
+            
+            <div class="row">
+                <button id="prev" onclick="previous()">Prev</button>
+                <button id="next" onclick="next()">Next</button>
+            </div>
+    </div>
+    <p id="status" class="muted"></p>
+    <span id="pageInfo" class="muted"></span>
+    <div id="news"></div>
+  <script src="Function.js"></script>
+</body>
+</html>
